@@ -535,7 +535,7 @@ static cell_t PTaH_SetPlayerAvatar(IPluginContext* pContext, const cell_t* param
 
 	for (int i = 0; i < iTargets; i++)
 	{
-		if (pNetChan = static_cast<INetChannel*>(engine->GetPlayerNetInfo(pTargets[i])))
+		if ((pNetChan = static_cast<INetChannel*>(engine->GetPlayerNetInfo(pTargets[i]))))
 		{
 			if (!pNetChan->EnqueueVeryLargeAsyncTransfer(msgAvatarData))
 			{
