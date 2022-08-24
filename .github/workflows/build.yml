@@ -37,6 +37,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: sourcemod
+          ref: 1.11-dev
           repository: alliedmodders/sourcemod
           submodules: recursive
 
